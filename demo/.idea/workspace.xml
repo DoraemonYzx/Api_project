@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f184ef6-d978-4c31-8940-b513731742ce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/demo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/base_opmysql.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/base_opmysql.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,6 +20,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="DoraemonYzx &lt;1353520146@qq.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1a0gZdjzLKUbrG4GriajpVYaocS" />
@@ -60,10 +64,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="598" y="111" key="CommitChangelistDialog2" timestamp="1585878775370">
+    <state x="598" y="111" key="CommitChangelistDialog2" timestamp="1585878876813">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="598" y="111" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585878775370" />
+    <state x="598" y="111" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585878876813" />
     <state x="184" y="85" key="DiffContextDialog" timestamp="1585878774351">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -72,9 +76,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="151" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1585878181754" />
-    <state x="640" y="342" key="com.intellij.ide.util.TipDialog" timestamp="1585877993649">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1585878892886">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="640" y="342" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585877993649" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1585878892886" />
+    <state x="640" y="342" key="com.intellij.ide.util.TipDialog" timestamp="1585901627468">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="640" y="342" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585901627468" />
   </component>
 </project>
