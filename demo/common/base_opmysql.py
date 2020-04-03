@@ -3,12 +3,15 @@
 """
 @author:余振新
 @file: base_opmysql.py
-@time: 2020/04/02
+@time: 2020/04/03
 """
-'''
+
+import os
+import pymysql
+import logging
+"""
 定义对MySql数据库的基本操作的封装
 1.包含基本的单条语句操作，如删除，修改，更新
 2.独立的查询单条，多条数据
 3.独立的添加多条数据
-'''
-
+"""

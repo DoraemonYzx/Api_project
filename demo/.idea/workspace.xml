@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a3f3cbb6-7e08-43b1-9850-56d5904e46d2" name="Default Changelist" comment="" />
+    <list default="true" id="9f184ef6-d978-4c31-8940-b513731742ce" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/demo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/base_opmysql.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/base_opmysql.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +20,11 @@
       </list>
     </option>
   </component>
-  <component name="ProjectId" id="1Zyf7I6FJCEoh2OjADNu2FuXKHm" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1a0gZdjzLKUbrG4GriajpVYaocS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -41,22 +51,30 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a3f3cbb6-7e08-43b1-9850-56d5904e46d2" name="Default Changelist" comment="" />
-      <created>1585816085459</created>
+      <changelist id="9f184ef6-d978-4c31-8940-b513731742ce" name="Default Changelist" comment="" />
+      <created>1585877981416</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1585816085459</updated>
+      <updated>1585877981416</updated>
     </task>
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="461" y="151" key="SettingsEditor" timestamp="1585816537991">
+    <state x="598" y="111" key="CommitChangelistDialog2" timestamp="1585878775370">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="151" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1585816537991" />
-    <state x="640" y="342" key="com.intellij.ide.util.TipDialog" timestamp="1585816087536">
+    <state x="598" y="111" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585878775370" />
+    <state x="184" y="85" key="DiffContextDialog" timestamp="1585878774351">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="640" y="342" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585816087536" />
+    <state x="184" y="85" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585878774351" />
+    <state x="461" y="151" key="SettingsEditor" timestamp="1585878181754">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="151" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1585878181754" />
+    <state x="640" y="342" key="com.intellij.ide.util.TipDialog" timestamp="1585877993649">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="640" y="342" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585877993649" />
   </component>
 </project>
