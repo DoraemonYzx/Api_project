@@ -18,15 +18,16 @@ from public import config
 """
 
 
-class OperationDbInterface(object):
+class OperationDbInterface:
 
     def __init__(self,
                  host_db='180.106.83.239',
                  user_db='root',
-                 passwd_db='Cloud@18915898007',
+                 passwd_db="Cloud@18915898007",
                  name_db='cxjk_xspt',
-                 port_db='46986',
+                 port_db=46986,
                  link_type=0):
+        print("初始化数据库连接")
         """
         定义初始化数据库连接
         :param host_db: 数据库服务主机
@@ -41,12 +42,13 @@ class OperationDbInterface(object):
                 # 创建数据库连接,返回字典格式
                 self.conn = pymysql.connect(host=host_db, user=user_db, passwd=passwd_db, db=name_db, port=port_db,
                                             charset='utf8', cursorclass=pymysql.cursors.DictCursor)
-                print("链接数据库成功")
             else:
                 # 创建数据库连接,返回元祖格式
                 self.conn = pymysql.connect(host=host_db, user=user_db, passwd=passwd_db, db=name_db, port=port_db,
                                             charset='utf7')
             self.cur = self.conn.cursor()
+            print("数据库连接成功|数据库为：%s" % name_db)
+
         except pymysql.Error as e:
             print("创建数据库连接失败|Mysql Error %d: %s" % (e.args[0], e.args[1]))
             logging.basicConfig(filename=config.src_path+'log/syserror.log', level=logging.DEBUG,
@@ -65,6 +67,7 @@ class OperationDbInterface(object):
             self.cur.execute(condition)  # 执行SQL语句
             self.conn.commit()  # 提交游标数据
             result = {'code': '0000', 'message': '执行通用操作成功', 'data': []}
+
         except pymysql.Error as e:
             self.conn.rollback()  # 执行回滚操作
             result = {'code': '9999', 'message': '执行通用操作异常', 'data': []}
@@ -73,6 +76,10 @@ class OperationDbInterface(object):
                                 format='%(asctime)s %(filename)s[line:%(lineno)d]%(levelname)s %(message)s')
             logger = logging.getLogger(__name__)
             logger.exception(e)
+        if result['code'] == '0000':
+            print("数据为:%s" % result['data'], result['message'])
+        else:
+            print(result['message'])
         return result
 
     # 查询表中的单条数据
@@ -85,10 +92,10 @@ class OperationDbInterface(object):
         try:
             rows_affect = self.cur.execute(condition)
             if rows_affect > 0:  # 查询结果返回数据大于0
-                results = self.cur.fetchon()  # 获取一条结果
-                result = {'code': '0000', 'message': '执行单挑查询操作成功', 'data': results}
+                results = self.cur.fetchone()  # 获取一条结果
+                result = {'code': '0000', 'message': '执行单条查询操作成功', 'data': results}
             else:
-                result = {'code': '0000', 'message': '执行单挑查询操作成功', 'data': []}
+                result = {'code': '0000', 'message': '执行单条查询操作成功', 'data': []}
         except pymysql.Error as e:
             self. conn.rollback()
             result = {'code': '9999', 'message': '执行单条查询异常', 'data': []}
@@ -97,6 +104,10 @@ class OperationDbInterface(object):
                                 format='%(asctime)s %(filename)s[line:%(lineno)d]%(levelname)s %(message)s')
             logger = logging.getLogger(__name__)
             logger.exception(e)
+        if result['code'] == '0000':
+            print("数据为:%s" % result['data'], result['message'])
+        else:
+            print(result['message'])
         return result
 
     # 查询表中多条数据
@@ -122,6 +133,10 @@ class OperationDbInterface(object):
                                 format='%(asctime)s %(filename)s[line:%(lineno)d]%(levelname)s %(message)s')
             logger = logging.getLogger(__name__)
             logger.exception(e)
+        if result['code'] == '0000':
+            print("数据为:%s" % result['data'], result['message'])
+        else:
+            print(result['message'])
         return result
 
     # 表中插入数据操作
@@ -138,22 +153,34 @@ class OperationDbInterface(object):
             result = {'code': '0000', 'message': '执行插入数据操作成功', 'data': results}
         except pymysql.Error as e:
             self.conn.rollback()
-            result = {'code': '0000', 'message': '执行插入数据操作异常', 'data': []}
+            result = {'code': '9999', 'message': '执行插入数据操作异常', 'data': []}
             print("数据库错误|insert_data %d: %s" % (e.args[0], e.args[1]))
-            logging.basicConfig(filename=config.src_path + 'log/syserror.log', level=logging.DEBUG,
+            logging.basicConfig(filename=config.src_path + '/log/syserror.log', level=logging.DEBUG,
                                 format='%(asctime)s %(filename)s[line:%(lineno)d]%(levelname)s %(message)s')
             logger = logging.getLogger(__name__)
             logger.exception(e)
+        if result['code'] == '0000':
+            print("插入的数据条数:%s" % result['data'], result['message'])
+        else:
+            print(result['message'])
         return result
 
-    def __del__(self):
-        if self.cur is not None:
-            self.cur.close()  # 关闭游标
-        if self.conn is not None:
-            self.conn.close()  # 释放数据库资源
+    # def __del__(self):
+    #     if self.cur is not None:
+    #         self.cur.close()  # 关闭游标
+    #     if self.conn is not None:
+    #         self.conn.close()  # 释放数据库资源
 
 
-if __name__ == "__main":
+if __name__ == "__main__":
     test = OperationDbInterface()  # 实例化类
-    result_select_all = test.select_all("SELECT * FROM t_doctor")  # 查询多条数据
-    print(result_select_all['data'], result_select_all['message'])
+    result_select_all = test.select_all("SELECT * FROM xk_rate")  # 查询多条数据
+
+    result_select_one = test.select_one("select * from xk_rate where id=16")  # 查询单条数据
+
+    result_op_sql = test.op_sql("update xk_rate set departmentname='上海学术组1' where id=16")
+
+    # 数据库插入操作
+    result_insert_data = test.insert_data("insert into xk_rate(id,departmentno,departmentname,tatalpatient,xkpatient)"
+                                          "values(%s,%s,%s,%s,%s)", [('31', 'JDEP50000081', '上海学术组', '14732', '1281'),
+                                                                     ('32', 'JDEP50000081', '上海学术组', '14732', '1281')])
