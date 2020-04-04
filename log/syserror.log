@@ -1,0 +1,200 @@
+2020-04-04 22:02:02,012 base_opmysql.py[line:147]ERROR (1062, "Duplicate entry '31' for key 'PRIMARY'")
+Traceback (most recent call last):
+  File "D:/Api_project/demo/demo/common/base_opmysql.py", line 137, in insert_data
+    results = self.cur.executemany(condition, params)  # 返回插入的数据条数
+  File "D:\Python360\lib\site-packages\pymysql\cursors.py", line 197, in executemany
+    self._get_db().encoding)
+  File "D:\Python360\lib\site-packages\pymysql\cursors.py", line 234, in _do_execute_many
+    rows += self.execute(sql + postfix)
+  File "D:\Python360\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Python360\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Python360\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Python360\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Python360\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Python360\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Python360\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Python360\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry '31' for key 'PRIMARY'")
+2020-04-04 22:03:02,235 base_opmysql.py[line:147]ERROR (1062, "Duplicate entry '31' for key 'PRIMARY'")
+Traceback (most recent call last):
+  File "D:/Api_project/demo/demo/common/base_opmysql.py", line 137, in insert_data
+    results = self.cur.executemany(condition, params)  # 返回插入的数据条数
+  File "D:\Python360\lib\site-packages\pymysql\cursors.py", line 197, in executemany
+    self._get_db().encoding)
+  File "D:\Python360\lib\site-packages\pymysql\cursors.py", line 234, in _do_execute_many
+    rows += self.execute(sql + postfix)
+  File "D:\Python360\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Python360\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Python360\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Python360\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Python360\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Python360\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Python360\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Python360\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry '31' for key 'PRIMARY'")
+2020-04-04 22:06:30,967 base_opmysql.py[line:147]ERROR (1062, "Duplicate entry '31' for key 'PRIMARY'")
+Traceback (most recent call last):
+  File "D:/Api_project/demo/demo/common/base_opmysql.py", line 137, in insert_data
+    results = self.cur.executemany(condition, params)  # 返回插入的数据条数
+  File "D:\Python360\lib\site-packages\pymysql\cursors.py", line 197, in executemany
+    self._get_db().encoding)
+  File "D:\Python360\lib\site-packages\pymysql\cursors.py", line 234, in _do_execute_many
+    rows += self.execute(sql + postfix)
+  File "D:\Python360\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Python360\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Python360\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Python360\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Python360\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Python360\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Python360\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Python360\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry '31' for key 'PRIMARY'")
+2020-04-04 22:10:39,664 base_opmysql.py[line:147]ERROR (1062, "Duplicate entry '31' for key 'PRIMARY'")
+Traceback (most recent call last):
+  File "D:/Api_project/demo/demo/common/base_opmysql.py", line 137, in insert_data
+    results = self.cur.executemany(condition, params)  # 返回插入的数据条数
+  File "D:\Python360\lib\site-packages\pymysql\cursors.py", line 197, in executemany
+    self._get_db().encoding)
+  File "D:\Python360\lib\site-packages\pymysql\cursors.py", line 234, in _do_execute_many
+    rows += self.execute(sql + postfix)
+  File "D:\Python360\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Python360\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Python360\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Python360\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Python360\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Python360\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Python360\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Python360\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry '31' for key 'PRIMARY'")
+2020-04-04 22:13:22,903 base_opmysql.py[line:147]ERROR (1062, "Duplicate entry '31' for key 'PRIMARY'")
+Traceback (most recent call last):
+  File "D:/Api_project/demo/demo/common/base_opmysql.py", line 137, in insert_data
+    results = self.cur.executemany(condition, params)  # 返回插入的数据条数
+  File "D:\Python360\lib\site-packages\pymysql\cursors.py", line 197, in executemany
+    self._get_db().encoding)
+  File "D:\Python360\lib\site-packages\pymysql\cursors.py", line 234, in _do_execute_many
+    rows += self.execute(sql + postfix)
+  File "D:\Python360\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Python360\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Python360\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Python360\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Python360\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Python360\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Python360\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Python360\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry '31' for key 'PRIMARY'")
+2020-04-04 22:13:45,076 base_opmysql.py[line:147]ERROR (1062, "Duplicate entry '31' for key 'PRIMARY'")
+Traceback (most recent call last):
+  File "D:/Api_project/demo/demo/common/base_opmysql.py", line 137, in insert_data
+    results = self.cur.executemany(condition, params)  # 返回插入的数据条数
+  File "D:\Python360\lib\site-packages\pymysql\cursors.py", line 197, in executemany
+    self._get_db().encoding)
+  File "D:\Python360\lib\site-packages\pymysql\cursors.py", line 234, in _do_execute_many
+    rows += self.execute(sql + postfix)
+  File "D:\Python360\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Python360\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Python360\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Python360\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Python360\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Python360\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Python360\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Python360\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry '31' for key 'PRIMARY'")
+2020-04-04 22:21:52,521 base_opmysql.py[line:161]ERROR (1062, "Duplicate entry '31' for key 'PRIMARY'")
+Traceback (most recent call last):
+  File "D:/Api_project/demo/demo/common/base_opmysql.py", line 151, in insert_data
+    results = self.cur.executemany(condition, params)  # 返回插入的数据条数
+  File "D:\Python360\lib\site-packages\pymysql\cursors.py", line 197, in executemany
+    self._get_db().encoding)
+  File "D:\Python360\lib\site-packages\pymysql\cursors.py", line 234, in _do_execute_many
+    rows += self.execute(sql + postfix)
+  File "D:\Python360\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Python360\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Python360\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Python360\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Python360\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Python360\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Python360\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Python360\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry '31' for key 'PRIMARY'")
+2020-04-04 22:24:11,622 base_opmysql.py[line:161]ERROR (1062, "Duplicate entry '31' for key 'PRIMARY'")
+Traceback (most recent call last):
+  File "D:/Api_project/demo/demo/common/base_opmysql.py", line 151, in insert_data
+    results = self.cur.executemany(condition, params)  # 返回插入的数据条数
+  File "D:\Python360\lib\site-packages\pymysql\cursors.py", line 197, in executemany
+    self._get_db().encoding)
+  File "D:\Python360\lib\site-packages\pymysql\cursors.py", line 234, in _do_execute_many
+    rows += self.execute(sql + postfix)
+  File "D:\Python360\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Python360\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Python360\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Python360\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Python360\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Python360\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Python360\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Python360\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry '31' for key 'PRIMARY'")
