@@ -45,13 +45,13 @@ class OperationDbInterface:
             else:
                 # 创建数据库连接,返回元祖格式
                 self.conn = pymysql.connect(host=host_db, user=user_db, passwd=passwd_db, db=name_db, port=port_db,
-                                            charset='utf7')
+                                            charset='utf8')
             self.cur = self.conn.cursor()
             print("数据库连接成功|数据库为：%s" % name_db)
 
         except pymysql.Error as e:
             print("创建数据库连接失败|Mysql Error %d: %s" % (e.args[0], e.args[1]))
-            logging.basicConfig(filename=config.src_path+'log/syserror.log', level=logging.DEBUG,
+            logging.basicConfig(filename=config.src_path+'/log/syserror.log', level=logging.DEBUG,
                                 format='%(asctime)s %(filename)s[line:%(lineno)d]%(levelname)s %(message)s')
             logger = logging.getLogger(__name__)
             logger.exception(e)
@@ -72,7 +72,7 @@ class OperationDbInterface:
             self.conn.rollback()  # 执行回滚操作
             result = {'code': '9999', 'message': '执行通用操作异常', 'data': []}
             print("数据库错误|op_sql %d: %s" % (e.args[0], e.args[1]))
-            logging.basicConfig(filename=config.src_path + 'log/syserror.log', level=logging.DEBUG,
+            logging.basicConfig(filename=config.src_path + '/log/syserror.log', level=logging.DEBUG,
                                 format='%(asctime)s %(filename)s[line:%(lineno)d]%(levelname)s %(message)s')
             logger = logging.getLogger(__name__)
             logger.exception(e)
@@ -100,7 +100,7 @@ class OperationDbInterface:
             self. conn.rollback()
             result = {'code': '9999', 'message': '执行单条查询异常', 'data': []}
             print("数据库错误|select_one %d: %s" % (e.args[0], e.args[1]))
-            logging.basicConfig(filename=config.src_path + 'log/syserror.log', level=logging.DEBUG,
+            logging.basicConfig(filename=config.src_path + '/log/syserror.log', level=logging.DEBUG,
                                 format='%(asctime)s %(filename)s[line:%(lineno)d]%(levelname)s %(message)s')
             logger = logging.getLogger(__name__)
             logger.exception(e)
@@ -129,7 +129,7 @@ class OperationDbInterface:
             self.conn.rollback()
             result = {'code': '9999', 'message': '执行批量查询操作异常', 'data': []}
             print("数据库错误|select_all %d: %s" % (e.args[0], e.args[1]))
-            logging.basicConfig(filename=config.src_path + 'log/syserror.log', level=logging.DEBUG,
+            logging.basicConfig(filename=config.src_path + '/log/syserror.log', level=logging.DEBUG,
                                 format='%(asctime)s %(filename)s[line:%(lineno)d]%(levelname)s %(message)s')
             logger = logging.getLogger(__name__)
             logger.exception(e)

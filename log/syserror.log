@@ -198,3 +198,503 @@ Traceback (most recent call last):
   File "D:\Python360\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
     raise errorclass(errno, errval)
 pymysql.err.IntegrityError: (1062, "Duplicate entry '31' for key 'PRIMARY'")
+2020-04-08 11:29:14,500 base_request.py[line:101]ERROR Invalid URL 'www.kugou.com/?': No schema supplied. Perhaps you meant http://www.kugou.com/??
+Traceback (most recent call last):
+  File "D:/Api_project/demo/common/base_request.py", line 86, in __http_get
+    response = requests.get(url=requrl, headers=headerdata, verify=False, timeout=10)
+  File "D:\python36\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "D:\python36\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\python36\lib\site-packages\requests\sessions.py", line 519, in request
+    prep = self.prepare_request(req)
+  File "D:\python36\lib\site-packages\requests\sessions.py", line 462, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "D:\python36\lib\site-packages\requests\models.py", line 313, in prepare
+    self.prepare_url(url, params)
+  File "D:\python36\lib\site-packages\requests\models.py", line 387, in prepare_url
+    raise MissingSchema(error)
+requests.exceptions.MissingSchema: Invalid URL 'www.kugou.com/?': No schema supplied. Perhaps you meant http://www.kugou.com/??
+2020-04-08 11:29:39,265 base_request.py[line:101]ERROR Invalid URL 'www.kugou.com/?': No schema supplied. Perhaps you meant http://www.kugou.com/??
+Traceback (most recent call last):
+  File "D:/Api_project/demo/common/base_request.py", line 86, in __http_get
+    response = requests.get(url=requrl, headers=headerdata, verify=False, timeout=10)
+  File "D:\python36\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "D:\python36\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\python36\lib\site-packages\requests\sessions.py", line 519, in request
+    prep = self.prepare_request(req)
+  File "D:\python36\lib\site-packages\requests\sessions.py", line 462, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "D:\python36\lib\site-packages\requests\models.py", line 313, in prepare
+    self.prepare_url(url, params)
+  File "D:\python36\lib\site-packages\requests\models.py", line 387, in prepare_url
+    raise MissingSchema(error)
+requests.exceptions.MissingSchema: Invalid URL 'www.kugou.com/?': No schema supplied. Perhaps you meant http://www.kugou.com/??
+2020-04-08 11:30:40,401 base_request.py[line:101]ERROR Invalid URL 'www.kugou.com/?': No schema supplied. Perhaps you meant http://www.kugou.com/??
+Traceback (most recent call last):
+  File "D:/Api_project/demo/common/base_request.py", line 86, in __http_get
+    response = requests.get(url=requrl, headers=headerdata, verify=False, timeout=10)
+  File "D:\python36\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "D:\python36\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\python36\lib\site-packages\requests\sessions.py", line 519, in request
+    prep = self.prepare_request(req)
+  File "D:\python36\lib\site-packages\requests\sessions.py", line 462, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "D:\python36\lib\site-packages\requests\models.py", line 313, in prepare
+    self.prepare_url(url, params)
+  File "D:\python36\lib\site-packages\requests\models.py", line 387, in prepare_url
+    raise MissingSchema(error)
+requests.exceptions.MissingSchema: Invalid URL 'www.kugou.com/?': No schema supplied. Perhaps you meant http://www.kugou.com/??
+2020-04-08 11:58:59,865 base_request.py[line:68]ERROR 'str' object has no attribute 'items'
+Traceback (most recent call last):
+  File "D:/Api_project/demo/common/base_request.py", line 53, in __http_post
+    response = requests.post(url=interface_url, headers=headerdata, data=temp_interface_param, verify=False, timeout=10)
+  File "D:\python36\lib\site-packages\requests\api.py", line 116, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "D:\python36\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\python36\lib\site-packages\requests\sessions.py", line 519, in request
+    prep = self.prepare_request(req)
+  File "D:\python36\lib\site-packages\requests\sessions.py", line 462, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "D:\python36\lib\site-packages\requests\models.py", line 314, in prepare
+    self.prepare_headers(headers)
+  File "D:\python36\lib\site-packages\requests\models.py", line 446, in prepare_headers
+    for header in headers.items():
+AttributeError: 'str' object has no attribute 'items'
+2020-04-08 15:16:03,937 base_request.py[line:68]ERROR 'str' object has no attribute 'items'
+Traceback (most recent call last):
+  File "D:/Api_project/demo/common/base_request.py", line 53, in __http_post
+    response = requests.post(url=interface_url, headers=headerdata, data=temp_interface_param, verify=False, timeout=10)
+  File "D:\python36\lib\site-packages\requests\api.py", line 116, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "D:\python36\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\python36\lib\site-packages\requests\sessions.py", line 519, in request
+    prep = self.prepare_request(req)
+  File "D:\python36\lib\site-packages\requests\sessions.py", line 462, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "D:\python36\lib\site-packages\requests\models.py", line 314, in prepare
+    self.prepare_headers(headers)
+  File "D:\python36\lib\site-packages\requests\models.py", line 446, in prepare_headers
+    for header in headers.items():
+AttributeError: 'str' object has no attribute 'items'
+2020-04-08 15:19:35,126 base_request.py[line:68]ERROR 'str' object has no attribute 'items'
+Traceback (most recent call last):
+  File "D:/Api_project/demo/common/base_request.py", line 53, in __http_post
+    response = requests.post(url=interface_url, headers=headerdata, data=temp_interface_param, verify=False, timeout=10)
+  File "D:\python36\lib\site-packages\requests\api.py", line 116, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "D:\python36\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\python36\lib\site-packages\requests\sessions.py", line 519, in request
+    prep = self.prepare_request(req)
+  File "D:\python36\lib\site-packages\requests\sessions.py", line 462, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "D:\python36\lib\site-packages\requests\models.py", line 314, in prepare
+    self.prepare_headers(headers)
+  File "D:\python36\lib\site-packages\requests\models.py", line 446, in prepare_headers
+    for header in headers.items():
+AttributeError: 'str' object has no attribute 'items'
+2020-04-10 09:18:04,244 compare.py[line:125]ERROR unexpected character after line continuation character (<string>, line 1)
+Traceback (most recent call last):
+  File "D:\Api_project\demo\common\compare.py", line 104, in compare_params_complete
+    list_params_to_compare = eval(self.params_to_compare)  # 将数据库表unicode编码数据转换成原列表
+  File "<string>", line 1
+    [\'code\',\'data\',\'country\']
+                                  ^
+SyntaxError: unexpected character after line continuation character
+2020-04-10 09:18:38,948 base_opmysql.py[line:57]ERROR (1049, "Unknown database 'case_interface'")
+Traceback (most recent call last):
+  File "D:\Api_project\demo\common\base_opmysql.py", line 44, in __init__
+    charset='utf8', cursorclass=pymysql.cursors.DictCursor)
+  File "D:\python36\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "D:\python36\lib\site-packages\pymysql\connections.py", line 325, in __init__
+    self.connect()
+  File "D:\python36\lib\site-packages\pymysql\connections.py", line 599, in connect
+    self._request_authentication()
+  File "D:\python36\lib\site-packages\pymysql\connections.py", line 861, in _request_authentication
+    auth_packet = self._read_packet()
+  File "D:\python36\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\python36\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\python36\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1049, "Unknown database 'case_interface'")
+2020-04-10 09:18:39,020 base_opmysql.py[line:57]ERROR (1049, "Unknown database 'case_interface'")
+Traceback (most recent call last):
+  File "D:\Api_project\demo\common\base_opmysql.py", line 44, in __init__
+    charset='utf8', cursorclass=pymysql.cursors.DictCursor)
+  File "D:\python36\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "D:\python36\lib\site-packages\pymysql\connections.py", line 325, in __init__
+    self.connect()
+  File "D:\python36\lib\site-packages\pymysql\connections.py", line 599, in connect
+    self._request_authentication()
+  File "D:\python36\lib\site-packages\pymysql\connections.py", line 861, in _request_authentication
+    auth_packet = self._read_packet()
+  File "D:\python36\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\python36\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\python36\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1049, "Unknown database 'case_interface'")
+2020-04-10 09:18:54,775 compare.py[line:125]ERROR unexpected character after line continuation character (<string>, line 1)
+Traceback (most recent call last):
+  File "D:\Api_project\demo\common\compare.py", line 104, in compare_params_complete
+    list_params_to_compare = eval(self.params_to_compare)  # 将数据库表unicode编码数据转换成原列表
+  File "<string>", line 1
+    [\'code\',\'data\',\'country\']
+                                  ^
+SyntaxError: unexpected character after line continuation character
+2020-04-10 09:29:43,799 compare.py[line:125]ERROR unexpected character after line continuation character (<string>, line 1)
+Traceback (most recent call last):
+  File "D:\Api_project\demo\common\compare.py", line 104, in compare_params_complete
+    list_params_to_compare = eval(self.params_to_compare)  # 将数据库表unicode编码数据转换成原列表
+  File "<string>", line 1
+    [\'code\',\'data\',\'country\']
+                                  ^
+SyntaxError: unexpected character after line continuation character
+2020-04-10 09:30:32,076 compare.py[line:125]ERROR unexpected character after line continuation character (<string>, line 1)
+Traceback (most recent call last):
+  File "D:\Api_project\demo\common\compare.py", line 104, in compare_params_complete
+    list_params_to_compare = eval(self.params_to_compare)  # 将数据库表unicode编码数据转换成原列表
+  File "<string>", line 1
+    [\'code\',\'data\',\'country\']
+                                  ^
+SyntaxError: unexpected character after line continuation character
+2020-04-10 09:31:15,927 compare.py[line:125]ERROR unexpected character after line continuation character (<string>, line 1)
+Traceback (most recent call last):
+  File "D:\Api_project\demo\common\compare.py", line 104, in compare_params_complete
+    list_params_to_compare = eval(self.params_to_compare)  # 将数据库表unicode编码数据转换成原列表
+  File "<string>", line 1
+    [\'code\',\'data\',\'country\']
+                                  ^
+SyntaxError: unexpected character after line continuation character
+2020-04-10 09:39:10,272 compare.py[line:126]ERROR unexpected character after line continuation character (<string>, line 1)
+Traceback (most recent call last):
+  File "D:\Api_project\demo\common\compare.py", line 105, in compare_params_complete
+    list_params_to_compare = eval(self.params_to_compare)  # 将数据库表unicode编码数据转换成原列表
+  File "<string>", line 1
+    [\'code\',\'data\',\'country\']
+                                  ^
+SyntaxError: unexpected character after line continuation character
+2020-04-10 09:42:05,980 compare.py[line:126]ERROR unexpected character after line continuation character (<string>, line 1)
+Traceback (most recent call last):
+  File "D:/Api_project/demo/common/compare.py", line 105, in compare_params_complete
+    list_params_to_compare = eval(self.params_to_compare)  # 将数据库表unicode编码数据转换成原列表
+  File "<string>", line 1
+    [\'code\',\'data\',\'country\']
+                                  ^
+SyntaxError: unexpected character after line continuation character
+2020-04-10 09:47:01,180 compare.py[line:125]ERROR unexpected character after line continuation character (<string>, line 1)
+Traceback (most recent call last):
+  File "D:/Api_project/demo/common/compare.py", line 104, in compare_params_complete
+    list_params_to_compare = eval(self.params_to_compare)  # 将数据库表unicode编码数据转换成原列表
+  File "<string>", line 1
+    [\'code\',\'data\',\'country\']
+                                  ^
+SyntaxError: unexpected character after line continuation character
+2020-04-10 10:02:51,816 compare.py[line:150]ERROR 'dict' object has no attribute 'startswith'
+Traceback (most recent call last):
+  File "D:/Api_project/demo/common/compare.py", line 131, in __recur_params
+    if result_interface.startswith('{') and isinstance(result_interface, str):  # 入参是字符串类型且能被转换成字典
+AttributeError: 'dict' object has no attribute 'startswith'
+2020-04-10 10:02:51,841 compare.py[line:125]ERROR unexpected character after line continuation character (<string>, line 1)
+Traceback (most recent call last):
+  File "D:/Api_project/demo/common/compare.py", line 104, in compare_params_complete
+    list_params_to_compare = eval(self.params_to_compare)  # 将数据库表unicode编码数据转换成原列表
+  File "<string>", line 1
+    [\'code\',\'data\',\'country\']
+                                  ^
+SyntaxError: unexpected character after line continuation character
+2020-04-10 10:06:28,568 compare.py[line:150]ERROR 'dict' object has no attribute 'startswith'
+Traceback (most recent call last):
+  File "D:/Api_project/demo/common/compare.py", line 131, in __recur_params
+    if result_interface.startswith('{') and isinstance(result_interface, str):  # 入参是字符串类型且能被转换成字典
+AttributeError: 'dict' object has no attribute 'startswith'
+2020-04-10 10:06:28,595 compare.py[line:125]ERROR unexpected character after line continuation character (<string>, line 1)
+Traceback (most recent call last):
+  File "D:/Api_project/demo/common/compare.py", line 104, in compare_params_complete
+    list_params_to_compare = eval(self.params_to_compare)  # 将数据库表unicode编码数据转换成原列表
+  File "<string>", line 1
+    [\'code\',\'data\',\'country\']
+                                  ^
+SyntaxError: unexpected character after line continuation character
+2020-04-10 10:06:53,841 compare.py[line:150]ERROR 'dict' object has no attribute 'startswith'
+Traceback (most recent call last):
+  File "D:/Api_project/demo/common/compare.py", line 131, in __recur_params
+    if result_interface.startswith('{') and isinstance(result_interface, str):  # 入参是字符串类型且能被转换成字典
+AttributeError: 'dict' object has no attribute 'startswith'
+2020-04-10 10:06:53,871 compare.py[line:125]ERROR unexpected character after line continuation character (<string>, line 1)
+Traceback (most recent call last):
+  File "D:/Api_project/demo/common/compare.py", line 104, in compare_params_complete
+    list_params_to_compare = eval(self.params_to_compare)  # 将数据库表unicode编码数据转换成原列表
+  File "<string>", line 1
+    [\'code\',\'data\',\'country\']
+                                  ^
+SyntaxError: unexpected character after line continuation character
+2020-04-10 10:07:40,811 compare.py[line:150]ERROR 'dict' object has no attribute 'startswith'
+Traceback (most recent call last):
+  File "D:/Api_project/demo/common/compare.py", line 131, in __recur_params
+    if result_interface.startswith('{') and isinstance(result_interface, str):  # 入参是字符串类型且能被转换成字典
+AttributeError: 'dict' object has no attribute 'startswith'
+2020-04-10 10:07:40,844 compare.py[line:125]ERROR unexpected character after line continuation character (<string>, line 1)
+Traceback (most recent call last):
+  File "D:/Api_project/demo/common/compare.py", line 104, in compare_params_complete
+    list_params_to_compare = eval(self.params_to_compare)  # 将数据库表unicode编码数据转换成原列表
+  File "<string>", line 1
+    [\'code\',\'data\',\'country\']
+                                  ^
+SyntaxError: unexpected character after line continuation character
+2020-04-10 10:08:06,230 compare.py[line:150]ERROR 'dict' object has no attribute 'startswith'
+Traceback (most recent call last):
+  File "D:/Api_project/demo/common/compare.py", line 131, in __recur_params
+    if result_interface.startswith('{') and isinstance(result_interface, str):  # 入参是字符串类型且能被转换成字典
+AttributeError: 'dict' object has no attribute 'startswith'
+2020-04-10 10:20:14,475 compare.py[line:150]ERROR 'dict' object has no attribute 'startswith'
+Traceback (most recent call last):
+  File "D:/Api_project/demo/common/compare.py", line 131, in __recur_params
+    if result_interface.startswith('{') and isinstance(result_interface, str):  # 入参是字符串类型且能被转换成字典
+AttributeError: 'dict' object has no attribute 'startswith'
+2020-04-10 10:37:04,212 compare.py[line:150]ERROR 'dict' object has no attribute 'startswith'
+Traceback (most recent call last):
+  File "D:/Api_project/demo/common/compare.py", line 131, in __recur_params
+    if result_interface.startswith('{') and isinstance(result_interface, str):  # 入参是字符串类型且能被转换成字典
+AttributeError: 'dict' object has no attribute 'startswith'
+2020-04-10 10:37:53,380 compare.py[line:150]ERROR 'dict' object has no attribute 'startswith'
+Traceback (most recent call last):
+  File "D:/Api_project/demo/common/compare.py", line 131, in __recur_params
+    if result_interface.startswith('{') and isinstance(result_interface, str):  # 入参是字符串类型且能被转换成字典
+AttributeError: 'dict' object has no attribute 'startswith'
+2020-04-10 10:49:18,428 compare.py[line:150]ERROR 'dict' object has no attribute 'startswith'
+Traceback (most recent call last):
+  File "D:/Api_project/demo/common/compare.py", line 131, in __recur_params
+    if result_interface.startswith('{') and isinstance(result_interface, str):  # 入参是字符串类型且能被转换成字典
+AttributeError: 'dict' object has no attribute 'startswith'
+2020-04-10 10:51:12,792 compare.py[line:150]ERROR 'dict' object has no attribute 'startswith'
+Traceback (most recent call last):
+  File "D:/Api_project/demo/common/compare.py", line 131, in __recur_params
+    if result_interface.startswith('{') and isinstance(result_interface, str):  # 入参是字符串类型且能被转换成字典
+AttributeError: 'dict' object has no attribute 'startswith'
+2020-04-10 10:54:07,257 compare.py[line:152]ERROR 'dict' object has no attribute 'startswith'
+Traceback (most recent call last):
+  File "D:/Api_project/demo/common/compare.py", line 131, in __recur_params
+    if result_interface.startswith('{') and isinstance(result_interface, str):  # 入参是字符串类型且能被转换成字典
+AttributeError: 'dict' object has no attribute 'startswith'
+2020-04-10 10:54:45,182 compare.py[line:153]ERROR 'dict' object has no attribute 'startswith'
+Traceback (most recent call last):
+  File "D:/Api_project/demo/common/compare.py", line 131, in __recur_params
+    if result_interface.startswith('{') and isinstance(result_interface, str):  # 入参是字符串类型且能被转换成字典
+AttributeError: 'dict' object has no attribute 'startswith'
+2020-04-10 10:55:44,896 compare.py[line:154]ERROR 'dict' object has no attribute 'startswith'
+Traceback (most recent call last):
+  File "D:/Api_project/demo/common/compare.py", line 131, in __recur_params
+    if result_interface.startswith('{') and isinstance(result_interface, str):  # 入参是字符串类型且能被转换成字典
+AttributeError: 'dict' object has no attribute 'startswith'
+2020-04-10 10:56:03,262 compare.py[line:155]ERROR 'dict' object has no attribute 'startswith'
+Traceback (most recent call last):
+  File "D:/Api_project/demo/common/compare.py", line 131, in __recur_params
+    if result_interface.startswith('{') and isinstance(result_interface, str):  # 入参是字符串类型且能被转换成字典
+AttributeError: 'dict' object has no attribute 'startswith'
+2020-04-10 10:57:10,325 compare.py[line:155]ERROR 'dict' object has no attribute 'startswith'
+Traceback (most recent call last):
+  File "D:/Api_project/demo/common/compare.py", line 131, in __recur_params
+    if result_interface.startswith('{') and isinstance(result_interface, str):  # 入参是字符串类型且能被转换成字典
+AttributeError: 'dict' object has no attribute 'startswith'
+2020-04-10 11:00:10,047 compare.py[line:154]ERROR 'str' object has no attribute 'items'
+Traceback (most recent call last):
+  File "D:/Api_project/demo/common/compare.py", line 138, in __recur_params
+    for param, value in result_interface.items():
+AttributeError: 'str' object has no attribute 'items'
+2020-04-10 11:04:34,985 compare.py[line:155]ERROR 'dict' object has no attribute 'startswith'
+Traceback (most recent call last):
+  File "D:/Api_project/demo/common/compare.py", line 131, in __recur_params
+    if result_interface.startswith('{') and isinstance(result_interface, str):  # 入参是字符串类型且能被转换成字典
+AttributeError: 'dict' object has no attribute 'startswith'
+2020-04-10 11:05:11,815 compare.py[line:155]ERROR 'dict' object has no attribute 'startswith'
+Traceback (most recent call last):
+  File "D:/Api_project/demo/common/compare.py", line 131, in __recur_params
+    if result_interface.startswith('{') and isinstance(result_interface, str):  # 入参是字符串类型且能被转换成字典
+AttributeError: 'dict' object has no attribute 'startswith'
+2020-04-10 11:10:45,024 compare.py[line:155]ERROR 'dict' object has no attribute 'startswith'
+Traceback (most recent call last):
+  File "D:/Api_project/demo/common/compare.py", line 131, in __recur_params
+    if result_interface.startswith('{') and isinstance(result_interface, str):  # 入参是字符串类型且能被转换成字典
+AttributeError: 'dict' object has no attribute 'startswith'
+2020-04-10 11:12:41,375 compare.py[line:156]ERROR 'dict' object has no attribute 'startswith'
+Traceback (most recent call last):
+  File "D:/Api_project/demo/common/compare.py", line 131, in __recur_params
+    if result_interface.startswith('{') and isinstance(result_interface, str):  # 入参是字符串类型且能被转换成字典
+AttributeError: 'dict' object has no attribute 'startswith'
+2020-04-10 11:14:36,568 compare.py[line:155]ERROR 'dict' object has no attribute 'startswith'
+Traceback (most recent call last):
+  File "D:/Api_project/demo/common/compare.py", line 131, in __recur_params
+    if result_interface.startswith('{') and isinstance(result_interface, str):  # 入参是字符串类型且能被转换成字典
+AttributeError: 'dict' object has no attribute 'startswith'
+2020-04-10 11:15:08,895 compare.py[line:155]ERROR 'dict' object has no attribute 'startswith'
+Traceback (most recent call last):
+  File "D:/Api_project/demo/common/compare.py", line 131, in __recur_params
+    if result_interface.startswith('{') and isinstance(result_interface, str):  # 入参是字符串类型且能被转换成字典
+AttributeError: 'dict' object has no attribute 'startswith'
+2020-04-10 11:16:25,167 compare.py[line:156]ERROR 'dict' object has no attribute 'startswith'
+Traceback (most recent call last):
+  File "D:/Api_project/demo/common/compare.py", line 131, in __recur_params
+    if result_interface.startswith('{') and isinstance(result_interface, str):  # 入参是字符串类型且能被转换成字典
+AttributeError: 'dict' object has no attribute 'startswith'
+2020-04-10 11:17:42,473 compare.py[line:125]ERROR 'CompareParm' object has no attribute '_CompareParm__recur_params'
+Traceback (most recent call last):
+  File "D:/Api_project/demo/common/compare.py", line 100, in compare_params_complete
+    temp_compare_params = self.__recur_params(result_interface)  # 获取返回包参数合集
+AttributeError: 'CompareParm' object has no attribute '_CompareParm__recur_params'
+2020-04-10 11:18:42,452 compare.py[line:155]ERROR 'dict' object has no attribute 'startswith'
+Traceback (most recent call last):
+  File "D:/Api_project/demo/common/compare.py", line 131, in recur_params
+    if result_interface.startswith('{') and isinstance(result_interface, str):  # 入参是字符串类型且能被转换成字典
+AttributeError: 'dict' object has no attribute 'startswith'
+2020-04-10 11:20:06,168 compare.py[line:155]ERROR 'dict' object has no attribute 'startswith'
+Traceback (most recent call last):
+  File "D:/Api_project/demo/common/compare.py", line 131, in recur_params
+    if result_interface.startswith('{') and isinstance(result_interface, str):  # 入参是字符串类型且能被转换成字典
+AttributeError: 'dict' object has no attribute 'startswith'
+2020-04-10 11:20:11,880 compare.py[line:155]ERROR 'dict' object has no attribute 'startswith'
+Traceback (most recent call last):
+  File "D:/Api_project/demo/common/compare.py", line 131, in recur_params
+    if result_interface.startswith('{') and isinstance(result_interface, str):  # 入参是字符串类型且能被转换成字典
+AttributeError: 'dict' object has no attribute 'startswith'
+2020-04-10 11:20:25,761 compare.py[line:155]ERROR 'dict' object has no attribute 'startswith'
+Traceback (most recent call last):
+  File "D:/Api_project/demo/common/compare.py", line 131, in recur_params
+    if result_interface.startswith('{') and isinstance(result_interface, str):  # 入参是字符串类型且能被转换成字典
+AttributeError: 'dict' object has no attribute 'startswith'
+2020-04-10 11:20:32,887 compare.py[line:155]ERROR 'dict' object has no attribute 'startswith'
+Traceback (most recent call last):
+  File "D:/Api_project/demo/common/compare.py", line 131, in recur_params
+    if result_interface.startswith('{') and isinstance(result_interface, str):  # 入参是字符串类型且能被转换成字典
+AttributeError: 'dict' object has no attribute 'startswith'
+2020-04-10 11:20:39,872 compare.py[line:155]ERROR 'dict' object has no attribute 'startswith'
+Traceback (most recent call last):
+  File "D:/Api_project/demo/common/compare.py", line 131, in recur_params
+    if result_interface.startswith('{') and isinstance(result_interface, str):  # 入参是字符串类型且能被转换成字典
+AttributeError: 'dict' object has no attribute 'startswith'
+2020-04-10 11:27:47,612 compare.py[line:153]ERROR 'dict' object has no attribute 'startswith'
+Traceback (most recent call last):
+  File "D:/Api_project/demo/common/compare.py", line 131, in __recur_params
+    if result_interface.startswith('{') and isinstance(result_interface, str):  # 入参是字符串类型且能被转换成字典
+AttributeError: 'dict' object has no attribute 'startswith'
+2020-04-10 12:10:34,023 compare.py[line:153]ERROR 'dict' object has no attribute 'startswith'
+Traceback (most recent call last):
+  File "D:/Api_project/demo/common/compare.py", line 131, in __recur_params
+    if result_interface.startswith('{') and isinstance(result_interface, str):  # 入参是字符串类型且能被转换成字典
+AttributeError: 'dict' object has no attribute 'startswith'
+2020-04-10 12:11:40,630 compare.py[line:154]ERROR 'dict' object has no attribute 'startswith'
+Traceback (most recent call last):
+  File "D:/Api_project/demo/common/compare.py", line 132, in __recur_params
+    if result_interface.startswith('{') and isinstance(result_interface, str):  # 入参是字符串类型且能被转换成字典
+AttributeError: 'dict' object has no attribute 'startswith'
+2020-04-10 12:13:33,384 compare.py[line:155]ERROR 'dict' object has no attribute 'startswith'
+Traceback (most recent call last):
+  File "D:/Api_project/demo/common/compare.py", line 133, in __recur_params
+    if result_interface.startswith('{') and isinstance(result_interface, str):  # 入参是字符串类型且能被转换成字典
+AttributeError: 'dict' object has no attribute 'startswith'
+2020-04-10 12:16:56,690 compare.py[line:155]ERROR 'dict' object has no attribute 'startswith'
+Traceback (most recent call last):
+  File "D:/Api_project/demo/common/compare.py", line 133, in __recur_params
+    if result_interface.startswith('{') and isinstance(result_interface, str):  # 入参是字符串类型且能被转换成字典
+AttributeError: 'dict' object has no attribute 'startswith'
+2020-04-10 12:17:27,267 compare.py[line:156]ERROR 'dict' object has no attribute 'startswith'
+Traceback (most recent call last):
+  File "D:/Api_project/demo/common/compare.py", line 133, in __recur_params
+    if result_interface.startswith('{') and isinstance(result_interface, str):  # 入参是字符串类型且能被转换成字典
+AttributeError: 'dict' object has no attribute 'startswith'
+2020-04-10 14:55:49,539 base_opmysql.py[line:78]ERROR (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ip': '192.168.40.47', 'country': 'XX', 'area': '', 'region': 'XX', 'city': '内' at line 1")
+Traceback (most recent call last):
+  File "D:\Api_project\demo\common\base_opmysql.py", line 67, in op_sql
+    self.cur.execute(condition)  # 执行SQL语句
+  File "D:\python36\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\python36\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\python36\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\python36\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\python36\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\python36\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\python36\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\python36\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ip': '192.168.40.47', 'country': 'XX', 'area': '', 'region': 'XX', 'city': '内' at line 1")
+2020-04-10 15:02:19,000 base_opmysql.py[line:78]ERROR (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ip': '192.168.40.47', 'country': 'XX', 'area': '', 'region': 'XX', 'city': '内' at line 1")
+Traceback (most recent call last):
+  File "D:\Api_project\demo\common\base_opmysql.py", line 67, in op_sql
+    self.cur.execute(condition)  # 执行SQL语句
+  File "D:\python36\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\python36\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\python36\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\python36\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\python36\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\python36\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\python36\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\python36\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ip': '192.168.40.47', 'country': 'XX', 'area': '', 'region': 'XX', 'city': '内' at line 1")
+2020-04-10 16:32:08,780 base_opmysql.py[line:78]ERROR (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ip': '192.168.40.47', 'country': 'XX', 'area': '', 'region': 'XX', 'city': '内' at line 1")
+Traceback (most recent call last):
+  File "D:\Api_project\demo\common\base_opmysql.py", line 67, in op_sql
+    self.cur.execute(condition)  # 执行SQL语句
+  File "D:\python36\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\python36\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\python36\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\python36\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\python36\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\python36\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\python36\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\python36\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ip': '192.168.40.47', 'country': 'XX', 'area': '', 'region': 'XX', 'city': '内' at line 1")
+2020-04-10 16:33:27,094 base_opmysql.py[line:78]ERROR (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ip': '192.168.40.47', 'country': 'XX', 'area': '', 'region': 'XX', 'city': '内' at line 1")
+Traceback (most recent call last):
+  File "D:\Api_project\demo\common\base_opmysql.py", line 67, in op_sql
+    self.cur.execute(condition)  # 执行SQL语句
+  File "D:\python36\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\python36\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\python36\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\python36\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\python36\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\python36\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\python36\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\python36\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ip': '192.168.40.47', 'country': 'XX', 'area': '', 'region': 'XX', 'city': '内' at line 1")
