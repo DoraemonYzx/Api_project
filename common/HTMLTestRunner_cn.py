@@ -6,10 +6,10 @@
 @time: 2020/01/19
 """
 
-#-*- coding: utf-8 -*-
 """
 A TestRunner for use with the Python unit testing framework. It
 generates a HTML report to show the result at a glance.
+
 
 The simplest way to use this is to invoke its main method. E.g.
 
@@ -314,7 +314,7 @@ function drawCircle(pass, fail, error){
         ctx.fillStyle = color[i];
         ctx.fillRect(posX, posY + 20 * i, width, height);
         ctx.moveTo(posX, posY + 20 * i);
-        ctx.font = 'bold 14px';
+        ctx.font = 'bold 15px';
         ctx.fillStyle = color[i];
         var percent = text_arr[i] + ":"+data[i];
         ctx.fillText(percent, textX, textY + 20 * i);
@@ -401,7 +401,7 @@ function hide_img(obj){
 
     STYLESHEET_TMPL = """
 <style type="text/css" media="screen">
-body        { font-family: verdana, arial, helvetica, sans-serif; font-size: 80%; }
+body        { font-family: verdana, arial, helvetica, sans-serif; font-size: 90%; }
 table       { font-size: 100%; }
 pre  {
     white-space: pre-wrap;
@@ -493,7 +493,7 @@ a.popup_link:hover {
     background-color: #E6E6D6;
     font-family: "Lucida Console", "Courier New", Courier, monospace;
     text-align: left;
-    font-size: 8pt;
+    font-size: 12pt;
 }
 
 }

@@ -8,7 +8,7 @@
 
 from common.base_opmysql import OperationDbInterface
 from common.base_request import RequestInterface
-from common.compare import CompareParm
+from common.base_compare import CompareParm
 
 
 
